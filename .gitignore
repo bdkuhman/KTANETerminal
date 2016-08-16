@@ -26,10 +26,6 @@ ExportedObj/
 sysinfo.txt
 
 *.csproj
-/Assets/Generated.meta
-Assets/Generated
-Gen
 
 Assets/Examples/
-Assets/TestHarness/TestHighlightable.cs
 Assets/TestHarness/
