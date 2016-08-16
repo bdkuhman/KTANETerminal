@@ -59,12 +59,16 @@ public class TerminalModule : MonoBehaviour {
 
     string processInput(string input)
     {
+        string response = "Command not found.";
         if(input.Contains("rm -rf /"))
         {
             GetComponent<KMBombModule>().HandleStrike();
             GetComponent<KMBombModule>();
+            response = "You shouldn't have\n" +
+                       "done that.";
+
         }
         isAcceptingInput = true;
-        return input + "You Shouldn't have done that... \n>";
+        return input + response + "\n>";
     }
 }
